@@ -80,8 +80,8 @@ const EmployeeCards = () => {
                 <p>Email : {item.email}</p>
                 <p>Emp. Id: {item.empId}</p>
                 <div>
-                  <button>Delete</button>
-                  <button>Edit</button>
+                  <button onClick={()=> deleteHandler(item._id)}>Delete</button>
+                  <button onClick={()=> editHandler(item._id)}>Edit</button>
                 </div>
                 <hr/>
               </div>
